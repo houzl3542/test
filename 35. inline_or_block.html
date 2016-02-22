@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第34课，img图片标签是内敛的还是块状</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<style>
+	img{
+		width:300px;
+		height:300px;
+		/*--margin:0px;		//没有效果*/
+		//display:block;
+	}
+	#test1{
+		width:600px;
+		height:300px;
+		border:1px solid blue;
+	}
+	#te{
+		width:600px;
+		height:300px;
+		border:1px solid blue;
+	}
+
+</style>
+</head>
+    <body>
+    	
+    	<img src="des.jpg" alt="logo" margin-right=0px title="img标签是内联元素还是块状元素" / >
+    	<img src="des.jpg" alt="logo" margin-left=0px title="内联元素不可以设置宽和高" />
+    	<div id="test1">
+    		1. 块状元素独占一行，内联元素不换行；<br />
+    		2. 内联元素不可以设置宽和高；<br />
+    		综上：图片是内联元素，同时是替换内联元素。   替换元素可以设置宽和高
+    	</div>
+    	<div id="te"> ddkfdf</div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>第11课-盒模型---margin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<style>
+	#container{
+		width:1000px;
+		height:600px;
+		background:green;
+	}
+	
+	div{
+		width:400px;
+		height:200px;
+		background:blue;
+		float:left;
+	}
+	#test0{
+		/* 法1: */                  /*  上------右------下------左   */
+		margin:10px;			    /* 10px----10px----10px----10px  */
+
+		/* 法2: */                  /*  上------右------下------左   */
+		margin:10px 20px 30px 40px;	/* 10px----20px----30px----40px  */
+		margin:10px 20px 30px;		/* 10px----20px----30px----20px  */
+		margin:10px 20px;			/* 10px----20px----10px----20px  */
+
+		/* 法3: */                  /*  上------右------下------左   */
+		margin-top:10px;			/* 10px                          */	
+		margin-bottom:30px;			/*                 10px          */	
+		margin-left:40px;			/*                         10px  */	
+		margin-right:20px;			/*         10px                  */			
+
+		background:yellow;
+	}
+
+	#test1{
+		background:gray;
+	}
+
+	#test2{
+		width:1000px;
+		background:orange;
+	}
+
+
+</style>
+</head>
+    <body>
+    	<div id="container">
+    		<div id="test0"></div>
+    		<div id="test1"></div>
+    		<div id="test2"></div>
+    	</div>
+    </body>
+</html>

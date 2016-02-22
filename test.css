@@ -1,0 +1,15 @@
+.a1 {
+	COLOR: purple; TEXT-DECORATION: none
+}
+.a1:visited {
+	COLOR: green; TEXT-DECORATION: none
+}
+.a1:hover {
+	COLOR: red;
+}
+.a1:active {
+	COLOR: orange; TEXT-DECORATION: none
+}
+#bottom{
+	background:url("images/bottom.gif");
+}
